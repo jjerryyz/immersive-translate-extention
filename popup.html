@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h2>Immersive Translator Settings</h2>
+  <div class="form-group">
+    <label for="apiKey">Azure OpenAI API Key:</label>
+    <input type="text" id="apiKey" placeholder="Enter your API key">
+  </div>
+  <div class="form-group">
+    <label for="endpoint">Azure OpenAI Endpoint:</label>
+    <input type="text" id="endpoint" placeholder="Enter your endpoint URL">
+  </div>
+  <button id="save">Save Settings</button>
+  <script src="popup.js"></script>
+</body>
+</html> 
